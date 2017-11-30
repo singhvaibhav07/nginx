@@ -1,0 +1,26 @@
+#Default server configuration
+#
+server {
+
+
+	root /home/vaibhav/desktop/myApp;
+
+	index index.html ;
+
+
+	error_page 404 /404-error.html;
+	location /404-error.html {
+	root /home/vaibhav/desktop/myApp;
+	internal;
+	}
+
+	error_page 500 502 503 504 /500-error.html;
+	location /500-error.html{
+	root /home/vaibhav/desktop/myApp;
+	internal;
+	}
+	
+		
+}
+
+
